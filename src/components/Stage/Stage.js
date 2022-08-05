@@ -70,6 +70,8 @@ const Stage = () => {
                 let dataArr = Object.keys(data)[0].substring(2, Object.keys(data)[0].length - 2).split(",")
                 let teamName = dataArr[0].substring(1, dataArr[0].length - 1)
                 let points = dataArr[1]
+                let gamesPlayed = dataArr[2]
+                let gamesWon = dataArr[3]
 
                 //console.log(teamName, points)
 
@@ -77,13 +79,14 @@ const Stage = () => {
                     let newTeam = { ...prevTeam };
 
                     Object.values(prevTeam).forEach((singleTeam, index) => {
+
                         if (singleTeam.teamName === teamName) {
                             
                             newTeam[index].teamName = singleTeam.teamName
                             newTeam[index].teamPoints = points
                             newTeam[index].teamImage = singleTeam.teamImage
-                            newTeam[index].gamesPlayed = singleTeam.gamesPlayed
-                            newTeam[index].gamesWon = singleTeam.gamesWon
+                            newTeam[index].gamesPlayed = gamesPlayed
+                            newTeam[index].gamesWon = gamesWon
 
                         } else {
 
@@ -94,6 +97,7 @@ const Stage = () => {
                             newTeam[index].gamesWon = singleTeam.gamesWon
 
                         }
+
                     })
 
                     return (prevTeam, newTeam)
@@ -120,15 +124,17 @@ const Stage = () => {
             await fetch('https://script.google.com/macros/s/AKfycbzQfjtAOkRGNxseLayb1mCgz2qtPGiwE72GeCpBZW0NCHHrD49KXLPCCEvHt2eQ0RhKpA/exec').then(function(response){
                 return response.json()
             }).then(function(data) {
+                console.log(data) 
                 setTeams(prevTeam => {
                     let newTeam = { ...prevTeam };
+
 
                     Object.values(prevTeam).forEach((singleTeam, index) => {
                         newTeam[index].teamName = data['data'][index+1].team
                         newTeam[index].teamPoints = data['data'][index+1].points
                         newTeam[index].teamImage = singleTeam.teamImage
-                        newTeam[index].gamesPlayed = singleTeam.gamesPlayed
-                        newTeam[index].gamesWon = singleTeam.gamesWon
+                        newTeam[index].gamesPlayed = data['data'][index+1].gamesPlayed
+                        newTeam[index].gamesWon = data['data'][index+1].gamesWon
                     })
 
                     return (prevTeam, newTeam)
