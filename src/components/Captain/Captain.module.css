@@ -1,0 +1,44 @@
+.captain{
+    position: absolute;
+    bottom: 11%;
+    left: 55px;
+    width: calc(100% - 300px);
+    background-image: linear-gradient(to right, #fff 53%, rgba(255,255,255,0) 0%);
+    background-position: top;
+    background-size: 60px 5px;
+    background-repeat: repeat-x;
+    padding-top: 45px;
+    animation: trackAnimation 1.5s linear infinite;
+}
+
+@keyframes trackAnimation {
+    0%{
+        background-image: linear-gradient(to left, #fff 53%, rgba(255,255,255,0) 0%);
+    }
+
+    50%{
+        background-image: linear-gradient(to left, rgba(255,255,255,0) 53%, #fff 53%);
+    }
+
+    100%{
+        background-image: linear-gradient(to left, #fff 53%, rgba(255,255,255,0) 0%);
+    }
+}
+
+.captain:nth-child(4){
+    bottom: 32%;
+}
+
+.captain:nth-child(3){
+    bottom: 52%;
+}
+
+.captain:nth-child(2){
+    bottom: 72%;
+}
+
+.captain:nth-child(1){
+    bottom: 92%;
+    background: none;
+    animation: none
+}

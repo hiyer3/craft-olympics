@@ -1,0 +1,55 @@
+.landing{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+    flex-direction: column;
+    position: relative;
+} 
+
+.landing .logo{
+    max-width: 30vw;
+    margin: auto;
+}
+
+.landing .logo img{
+    max-width: 100%;
+}
+
+.landing .captains{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.landing .captains > div{
+    width: 20%;
+    text-align: center;
+}
+
+.landing .captains img{
+    max-width: 100%;
+}
+
+.landing .button{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.landing .button a{
+    background-color: #fff;
+    padding: 10px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ff00dc;
+    border-right: 2px solid #ff00dc;
+    border-bottom: 2px solid #ff00dc;
+    transition: 0.2s all linear;
+}
+
+.landing .button a:hover{
+    background-color: #ff00dc;
+    color: #fff;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}

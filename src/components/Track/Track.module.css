@@ -1,0 +1,12 @@
+.track{
+    background-color: #61484D;
+    border-top: 20px solid #61484D;
+    min-height: 600px;
+    height: 100%;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
+    padding: 0 250px 0 50px;
+    display: flex;
+    position: relative;
+}

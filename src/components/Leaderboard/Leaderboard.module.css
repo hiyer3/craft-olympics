@@ -1,0 +1,29 @@
+.leaderboard{
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #aeaeae;
+    border-left: 2px solid #aeaeae;
+    box-shadow: 1px 1px 12px 5px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 1px 12px 5px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 1px 12px 5px rgba(0,0,0,0.49);
+}
+
+.leaderboard h3{
+    margin: 8px auto;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+h1.title{
+    padding: 20px 5px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
