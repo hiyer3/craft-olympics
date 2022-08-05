@@ -7,7 +7,7 @@ const ProgressBar = (props) => {
     const [width, setwidth] = useState(0)
 
     useEffect(() => {
-        setwidth(props.points/2 * 10)
+        setwidth(props.points/2 * 5)
     },[props.points]);
 
     return(
