@@ -19,7 +19,7 @@ const Stage = () => {
     const [teams, setTeams] = useState({
         0: {
             teamName: "Geek Skwad",
-            teamPoints: 0,
+            teamPoints: 100,
             teamImage: t5,
             gamesPlayed: 0,
             gamesWon: 0,
@@ -66,7 +66,7 @@ const Stage = () => {
         });
 
         socket.on("sheetData", (data) => {
-            if(!data.key){
+            if (!data.key) {
                 let dataArr = Object.keys(data)[0].substring(2, Object.keys(data)[0].length - 2).split(",")
                 let teamName = dataArr[0].substring(1, dataArr[0].length - 1)
                 let points = dataArr[1]
@@ -81,7 +81,7 @@ const Stage = () => {
                     Object.values(prevTeam).forEach((singleTeam, index) => {
 
                         if (singleTeam.teamName === teamName) {
-                            
+
                             newTeam[index].teamName = singleTeam.teamName
                             newTeam[index].teamPoints = points
                             newTeam[index].teamImage = singleTeam.teamImage
@@ -102,7 +102,7 @@ const Stage = () => {
 
                     return (prevTeam, newTeam)
                 })
-            }else{
+            } else {
                 console.log("socket data", data)
             }
         });
@@ -116,47 +116,46 @@ const Stage = () => {
             socket.off('disconnect');
         };
 
-    },[socket])
+    }, [socket])
 
-    useEffect(()=>{
+    useEffect(() => {
 
         const fetchData = async () => {
-            await fetch('https://script.google.com/macros/s/AKfycbzQfjtAOkRGNxseLayb1mCgz2qtPGiwE72GeCpBZW0NCHHrD49KXLPCCEvHt2eQ0RhKpA/exec').then(function(response){
+            await fetch('https://script.google.com/macros/s/AKfycbzQfjtAOkRGNxseLayb1mCgz2qtPGiwE72GeCpBZW0NCHHrD49KXLPCCEvHt2eQ0RhKpA/exec').then(function (response) {
                 return response.json()
-            }).then(function(data) {
-                console.log(data) 
+            }).then(function (data) {
+                //console.log(data) 
                 setTeams(prevTeam => {
                     let newTeam = { ...prevTeam };
 
-
                     Object.values(prevTeam).forEach((singleTeam, index) => {
-                        newTeam[index].teamName = data['data'][index+1].team
-                        newTeam[index].teamPoints = data['data'][index+1].points
+                        newTeam[index].teamName = data['data'][index + 1].team
+                        newTeam[index].teamPoints = data['data'][index + 1].points
                         newTeam[index].teamImage = singleTeam.teamImage
-                        newTeam[index].gamesPlayed = data['data'][index+1].gamesPlayed
-                        newTeam[index].gamesWon = data['data'][index+1].gamesWon
+                        newTeam[index].gamesPlayed = data['data'][index + 1].gamesPlayed
+                        newTeam[index].gamesWon = data['data'][index + 1].gamesWon
                     })
 
                     return (prevTeam, newTeam)
                 })
-            
+
             })
-            
+
         }
 
         fetchData()
             .catch(console.error);
-    },[])
+    }, [])
 
 
     return (
         <>
             <div className={Styles.grass_background}>
                 <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, lg: 2 }}>
-                    <Grid item xs={12} style={{height: '30vh'}}>
+                    <Grid item xs={12} style={{ height: '30vh' }}>
                         <Leaderboard playingTeams={teams} />
                     </Grid>
-                    <Grid item xs={12} style={{height: '65vh'}}>
+                    <Grid item xs={12} style={{ height: '65vh' }}>
                         <Track playingTeams={teams} />
                     </Grid>
                 </Grid>
