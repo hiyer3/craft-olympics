@@ -19,7 +19,7 @@ const Stage = () => {
     const [teams, setTeams] = useState({
         0: {
             teamName: "Geek Skwad",
-            teamPoints: 100,
+            teamPoints: 0,
             teamImage: t5,
             gamesPlayed: 0,
             gamesWon: 0,
