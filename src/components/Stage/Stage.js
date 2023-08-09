@@ -54,7 +54,7 @@ const Stage = () => {
         },
     });
 
-    const SERVER = "https://craftdigitastg.wpengine.com/craft-olympics-server/";
+    const SERVER = "https://effervescent-cassata-8f37bf.netlify.app/";
     const socket = socketClient(SERVER, {
         transports: ['websocket']
     });
