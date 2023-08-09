@@ -10,7 +10,7 @@ import t3 from "./assets/Wes.gif"
 import t4 from "./assets/JM.gif"
 import t5 from "./assets/BD.gif"
 
-import craftOlympicsLogo from "./assets/Olympics-Logo-White-02.png"
+import craftOlympicsLogo from "./assets/craft-olympic-logo.png"
 
 import Styles from './Stage.module.css'
 
@@ -18,35 +18,35 @@ const Stage = () => {
 
     const [teams, setTeams] = useState({
         0: {
-            teamName: "Geek Skwad",
+            teamName: "Insider Training",
             teamPoints: 0,
             teamImage: t5,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         1: {
-            teamName: "DC Justice League",
+            teamName: "CRAFT to the Future",
             teamPoints: 0,
             teamImage: t4,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         2: {
-            teamName: "Craftzilla",
+            teamName: "Zoomed Out",
             teamPoints: 0,
             teamImage: t3,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         3: {
-            teamName: "807",
+            teamName: "Happy CRAFTers",
             teamPoints: 0,
             teamImage: t2,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         4: {
-            teamName: "CRAFTO Libre",
+            teamName: "CRAFTGPT",
             teamPoints: 0,
             teamImage: t1,
             gamesPlayed: 0,
@@ -54,7 +54,7 @@ const Stage = () => {
         },
     });
 
-    const SERVER = "https://craft-olympics.herokuapp.com/";
+    const SERVER = "http://craftdigitastg.wpengine.com/craft-olympics-server/";
     const socket = socketClient(SERVER, {
         transports: ['websocket']
     });
