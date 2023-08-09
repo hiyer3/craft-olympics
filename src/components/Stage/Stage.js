@@ -54,7 +54,7 @@ const Stage = () => {
         },
     });
 
-    const SERVER = "http://craftdigitastg.wpengine.com/craft-olympics-server/";
+    const SERVER = "https://craftdigitastg.wpengine.com/craft-olympics-server/";
     const socket = socketClient(SERVER, {
         transports: ['websocket']
     });
