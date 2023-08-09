@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7bc46eb9.css",
-    "main.js": "/static/js/main.f7cb974d.js",
+    "main.js": "/static/js/main.0c9d7913.js",
     "static/media/craft-olympic-logo.png": "/static/media/craft-olympic-logo.62875d1fecec6f52c22d.png",
     "static/media/Layle.gif": "/static/media/Layle.75915d47c5372eb328ec.gif",
     "static/media/BD.gif": "/static/media/BD.87515402275d911a266c.gif",
@@ -12,7 +12,6 @@
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
     "static/media/roboto-all-300-normal.woff": "/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
     "static/media/race-flag-13.gif": "/static/media/race-flag-13.432e872f1078d5b3dc93.gif",
-    "static/media/Olympics-Logo-02.png": "/static/media/Olympics-Logo-02.2ead7e4321965a8089d6.png",
     "static/media/JM.gif": "/static/media/JM.75ee4d8571609864216d.gif",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -44,10 +43,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.7bc46eb9.css.map": "/static/css/main.7bc46eb9.css.map",
-    "main.f7cb974d.js.map": "/static/js/main.f7cb974d.js.map"
+    "main.0c9d7913.js.map": "/static/js/main.0c9d7913.js.map"
   },
   "entrypoints": [
     "static/css/main.7bc46eb9.css",
-    "static/js/main.f7cb974d.js"
+    "static/js/main.0c9d7913.js"
   ]
 }
