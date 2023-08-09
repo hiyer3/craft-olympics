@@ -54,7 +54,7 @@ const Stage = () => {
         },
     });
 
-    const SERVER = "https://effervescent-cassata-8f37bf.netlify.app/";
+    const SERVER = "https://craft-olympics.herokuapp.com/";
     const socket = socketClient(SERVER, {
         transports: ['websocket']
     });
