@@ -10,7 +10,7 @@ import Wes from "./assets/Wes.gif"
 import JM from "./assets/JM.gif"
 import BD from "./assets/BD.gif"
 
-import craftOlympicsLogo from "./assets/craft-olympic-logo.png"
+import craftOlympicsLogo from "./assets/craft-olympic-logo-new.png"
 
 import Styles from './Stage.module.css'
 
