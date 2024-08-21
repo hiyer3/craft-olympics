@@ -4,11 +4,11 @@ import Track from '../Track/Track'
 import Leaderboard from '../Leaderboard/Leaderboard';
 import socketClient from "socket.io-client";
 
-import t1 from "./assets/Layle.gif"
-import t2 from "./assets/Sinead.gif"
-import t3 from "./assets/Wes.gif"
-import t4 from "./assets/JM.gif"
-import t5 from "./assets/BD.gif"
+import Layle from "./assets/Layle.gif"
+import Sinead from "./assets/Sinead.gif"
+import Wes from "./assets/Wes.gif"
+import JM from "./assets/JM.gif"
+import BD from "./assets/BD.gif"
 
 import craftOlympicsLogo from "./assets/craft-olympic-logo.png"
 
@@ -20,35 +20,35 @@ const Stage = () => {
         0: {
             teamName: "Craftington",
             teamPoints: 0,
-            teamImage: t5,
+            teamImage: BD,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         1: {
             teamName: "The CRAFT Boat",
             teamPoints: 0,
-            teamImage: t4,
+            teamImage: JM,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         2: {
             teamName: "House CRAFTyrion",
             teamPoints: 0,
-            teamImage: t3,
+            teamImage: Layle,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         3: {
             teamName: "CRAFT PAC",
             teamPoints: 0,
-            teamImage: t2,
+            teamImage: Wes,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         4: {
             teamName: "The Tortured CRAFT Department",
             teamPoints: 0,
-            teamImage: t1,
+            teamImage: Sinead,
             gamesPlayed: 0,
             gamesWon: 0,
         },
