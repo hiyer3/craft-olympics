@@ -8,7 +8,7 @@ const SingleLeaderboardMember = (props) => {
     return (
         <div className={Styles.SingleTeamMember}> 
             <Grid container spacing={1}>
-                <Grid item xs={12}>
+                <Grid className={Styles.titleWrapper} height={120} item xs={12}>
                     { props.description ? <h2 className={Styles.title}>{props.teamName}</h2> : <h2>{props.teamName}</h2>}
                 </Grid>
                 <Grid item xs={12}>

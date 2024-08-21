@@ -152,10 +152,10 @@ const Stage = () => {
         <>
             <div className={Styles.grass_background}>
                 <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, lg: 2 }}>
-                    <Grid item xs={12} style={{ height: '30vh' }}>
+                    <Grid item xs={12} style={{ height: '35vh' }}>
                         <Leaderboard playingTeams={teams} />
                     </Grid>
-                    <Grid item xs={12} style={{ height: '65vh' }}>
+                    <Grid item xs={12} style={{ height: '55vh' }}>
                         <Track playingTeams={teams} />
                     </Grid>
                 </Grid>

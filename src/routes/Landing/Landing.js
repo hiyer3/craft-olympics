@@ -1,5 +1,5 @@
 import React from "react";
-import craftOlympicsLogo from "../../components/Stage/assets/craft-olympic-logo.png"
+import craftOlympicsLogo from "../../components/Stage/assets/craft-olympic-logo-new.png"
 import t1 from "../../components/Stage/assets/Layle.gif"
 import t2 from "../../components/Stage/assets/Sinead.gif"
 import t3 from "../../components/Stage/assets/Wes.gif"

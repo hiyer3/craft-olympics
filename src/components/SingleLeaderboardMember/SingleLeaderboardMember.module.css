@@ -1,44 +1,50 @@
-.SingleTeamMember{
-    background-color: #fafafa;
-    color: #333;
-    border-bottom: 2px solid #aeaeae;
-    max-width: 20%;
-    border-right: 1px solid #aeaeae;
-    width: 16.6666%;
+.SingleTeamMember {
+  background-color: #fafafa;
+  color: #333;
+  border-bottom: 2px solid #aeaeae;
+  max-width: 20%;
+  border-right: 1px solid #aeaeae;
+  width: 16.6666%;
 }
 
-.SingleTeamMember div{
-    margin-top: 0;
+.SingleTeamMember div {
+  margin-top: 0;
 }
 
-.SingleTeamMember h1{
-    margin: 0;
-    font-weight: 300;
-    padding-top: 0px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid #aeaeae;
+.SingleTeamMember h1 {
+  margin: 0;
+  font-weight: 300;
+  padding-top: 0px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #aeaeae;
 }
 
-.SingleTeamMember h1.title{
-    font-size: 24px;
-    line-height: 1.58em;
-    font-weight: 500;
+.titleWrapper {
+  border-bottom: 2px solid #aeaeae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.SingleTeamMember h2.title{
-    font-size: 24px;
-    font-weight: 500;
+.SingleTeamMember h1.title {
+  font-size: 24px;
+  line-height: 1.58em;
+  font-weight: 500;
 }
- 
-.SingleTeamMember h2{
-    font-size: 24px;
-    margin: 0;
-    font-weight: 500;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    border-bottom: 2px solid #aeaeae ;
+
+.SingleTeamMember h2.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.SingleTeamMember h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
