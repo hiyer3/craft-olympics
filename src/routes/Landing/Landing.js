@@ -5,7 +5,7 @@ import t2 from "../../components/Stage/assets/Sinead.gif"
 import t3 from "../../components/Stage/assets/Wes.gif"
 import t4 from "../../components/Stage/assets/JM.gif"
 import t5 from "../../components/Stage/assets/BD.gif"
-
+ 
 import Styles from "./Landing.module.css"
 import { Link } from "react-router-dom";
 
