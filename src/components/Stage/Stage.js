@@ -18,35 +18,35 @@ const Stage = () => {
 
     const [teams, setTeams] = useState({
         0: {
-            teamName: "Insider Training",
+            teamName: "Craftington",
             teamPoints: 0,
             teamImage: t5,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         1: {
-            teamName: "CRAFT to the Future",
+            teamName: "The CRAFT Boat",
             teamPoints: 0,
             teamImage: t4,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         2: {
-            teamName: "Zoomed Out",
+            teamName: "House CRAFTyrion",
             teamPoints: 0,
             teamImage: t3,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         3: {
-            teamName: "Happy CRAFTers",
+            teamName: "CRAFT PAC",
             teamPoints: 0,
             teamImage: t2,
             gamesPlayed: 0,
             gamesWon: 0,
         },
         4: {
-            teamName: "CRAFTGPT",
+            teamName: "The Tortured CRAFT Department",
             teamPoints: 0,
             teamImage: t1,
             gamesPlayed: 0,
@@ -121,7 +121,7 @@ const Stage = () => {
     useEffect(() => {
 
         const fetchData = async () => {
-            await fetch('https://script.google.com/macros/s/AKfycbzQfjtAOkRGNxseLayb1mCgz2qtPGiwE72GeCpBZW0NCHHrD49KXLPCCEvHt2eQ0RhKpA/exec').then(function (response) {
+            await fetch('https://script.google.com/macros/s/AKfycbx8MTO6NtR70um6w1BFjwgBum9Zb82Yz2DIi3Oojn6jDgUCYRvEI03Jv2AdKUmdYyVRig/exec').then(function (response) {
                 return response.json()
             }).then(function (data) {
                 //console.log(data) 
