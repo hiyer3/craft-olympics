@@ -34,7 +34,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className={Styles.button}>
-                <Link to="/">Let's Begin</Link>
+                <Link to="/">Let the Games Begin!</Link>
             </div>
         </div>
     )
